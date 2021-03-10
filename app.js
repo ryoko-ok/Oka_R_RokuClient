@@ -4,10 +4,10 @@ const hbs = require('hbs');
 
 const app = express();
 
-const port = process.env.PORT || 5050;
+const port = process.env.PORT || 5050; // it should be different to server.js PORT(server side)
 
-app.set('views' , path.join(__dirname, 'views')); 
-app.set('view engine', hbs);
+app.set('views', path.join(__dirname, 'views')); 
+app.set('view engine', 'hbs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
